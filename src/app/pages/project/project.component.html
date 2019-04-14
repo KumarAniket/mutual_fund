@@ -1,0 +1,166 @@
+<div id="main-wrapper">
+
+  <!-- Page Preloader -->
+  <div id="preloader">
+    <div id="status">
+      <div class="status-mes"></div>
+    </div>
+  </div>
+
+  <div class="uc-mobile-menu-pusher">
+
+    <div class="content-wrapper">
+      <nav class="navbar m-menu navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home()"><img src="../../../assets/img/logo.png" alt=""></a>
+          </div>
+
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-nav">
+              <li><a href="home()">Home</a></li>
+              <li><a href="about()">About</a></li>
+              <li class="active"><a href="project()">Project</a></li>
+            </ul>
+
+          </div>
+          <!-- .navbar-collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- .nav -->
+
+
+      <section class="single-page-title single-page-title-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Our Project</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- .page-title -->
+
+      <section class="about-text">
+        <div class="container">
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p>This project heavily depends upon the usage of R Language which is used for the purpose of Data
+                Analysis of Mutual fund in order to depict it’s performance from past few years.
+                The performance of Mutual Funds is been shown in the form of graphs been plotted using the various
+                processes involved in Data Analysis. The results are been shown on our site which has been developed by
+                our respective team members.
+                Initially the user has to create an account in order to access the site for checking out the
+                performance of various Mutual Funds in the Finance market. In order to register the user has fill in
+                details such as Name, email – id, contact number. Once the user has successfully created his/her
+                account he would then be able to access the information and various data published regarding Mutual
+                Fund.
+              </p>
+            </div>
+            <div class="col-md-12">
+              <p>One key feature of our site is that the users have the right to share their queries based on their own
+                studies and experiences.
+                Our main aim is to create user friendly and easy to access interface which can be used by all kinds of
+                people. Kindly, please note that we do not intend to showcase or display any kind of false data or
+                information through any means . Our team tried their very best to display best possible results.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="team-section">
+        <div class="container proj">
+          <div class="row choices">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="dropdown box-1">
+                <div class="form-group">
+                  <label for="sel1">Select Year:</label>
+                  <select class="form-control" id="sel1" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+                    <option>Select Year...</option>
+                    <option value="2016">2017</option>
+                    <option value="2017">2018</option>
+                  </select>
+                  <label for="sel2">Select Dataset:</label>
+                  <select class="form-control" id="sel2" onchange="java_script_:getDataset(this.options[this.selectedIndex].value)">
+                    <option>Select Dataset...</option>
+                    <option>activity.csv</option>
+                    <option>asset.csv</option>
+                    <option>Transaction.csv</option>
+                    <option>Experience.csv</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <button type="button" name="load_data" onclick="validate()" id="load_data" class="btn btn-info">Proceed</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <a href="graphs()" target="_blank"><button type="button" name="view" id="view" class="btn btn-info">View Graphs</button></a>
+                  <!-- <button type="button" style="margin-top: 15px;" onclick="graph()" id="view" class="btn btn-info">View
+                    Graphs</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-6 col-xs-6" id="hiddenDiv">
+            <div id="activity_table"></div>
+          </div>
+          <div class="col-md-10 col-sm-6 col-xs-6" id="hiddenDiv2">
+            <div id="asset_table"></div>
+          </div>
+          <div class="col-md-10 col-sm-6 col-xs-6" id="hiddenDiv3">
+            <div id="Transaction_table"></div>
+          </div>
+          <div class="col-md-10 col-sm-6 col-xs-6" id="hiddenDiv4">
+            <div id="Experience_table"></div>
+          </div>
+          <div id="hiddenDiv2017" style="display:none">
+            <p>No Data Uploaded</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="copyright-section">
+          <div class="container clearfix">
+            <span class="copytext">&copy; MarketAnalyzer. All rights reserved.</span>
+          </div><!-- .container -->
+
+        </div><!-- .copyright-section -->
+      </footer>
+      <!-- .footer -->
+
+    </div>
+    <!-- .content-wrapper -->
+  </div>
+  <!-- .offcanvas-pusher -->
+
+  <div class="uc-mobile-menu uc-mobile-menu-effect">
+    <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="uc-mobile-menu-close-btn">&times;</button>
+    <div>
+      <div>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- .uc-mobile-menu -->
+</div>

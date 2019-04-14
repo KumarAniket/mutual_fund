@@ -1,0 +1,12 @@
+.graph img
+{
+  width:500px;
+  height:500px;
+  padding-top: 25px;
+  padding-bottom:25px;
+}
+
+.graph h4
+{
+  text-align: center;
+}
