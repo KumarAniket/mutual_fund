@@ -1,5 +1,5 @@
 # Mutual Fund Performance Prediction
-This was my final year major project for prediction of mutual funds using data science on R and developing a web application using MEAN stack.
+This was my final year major project for predicting the returns on investment on mutual funds using data science on R and developing a web application using MEAN stack.
 
 ## Introduction
 This project heavily depends upon the usage of R Language which is used for the purpose of Data Analysis of Mutual fund in order to depict it’s performance from past few years. The performance of Mutual Funds is been shown in the form of graphs been plotted using the various processes involved in Data Analysis. The results are been shown on our site which has been developed by our respective team members.
